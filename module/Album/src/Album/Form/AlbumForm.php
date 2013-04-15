@@ -4,7 +4,7 @@ namespace Album\Form;
 
 use Zend\Form\Form;
 
-class AlbumForm extends Form{
+class AlbumForm extends Form {
 	public function __construct($name = null){
 		parent::__construct('album');
 		$this->setAttribute('method','post');

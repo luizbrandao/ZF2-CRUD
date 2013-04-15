@@ -8,6 +8,7 @@ use Zend\InputFilter\InputFilterAwareInterface;
 use Zend\InputFilter\InputFilterInterface;
 
 class Album implements InputFilterAwareInterface{
+	
 	public $id;
 	public $artist;
 	public $title;
@@ -18,9 +19,11 @@ class Album implements InputFilterAwareInterface{
 		$this->artist = (isset($data['artist'])) ? $data['artist'] : null;
 		$this->title = (isset($data['title'])) ? $data['title'] : null;
 	}
+
 	public function setInputFilter(InputFilterInterface $inputFilter){
 		throw new Exception("Not used");		
 	}
+
 	public function getInputFilter(){
 		if(!$this->inputFilter){
 			$inputFilter = new InputFilter();
@@ -72,6 +75,7 @@ class Album implements InputFilterAwareInterface{
 		}
 		return $this->inputFilter;
 	}
+	
 	public function getArrayCopy(){
 		return get_object_vars($this);
 	}
