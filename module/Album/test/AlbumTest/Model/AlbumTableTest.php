@@ -6,10 +6,8 @@ use Album\Model\Album;
 use Zend\Db\ResultSet\ResultSet;
 use PHPUnit_Framework_TestCase;
 
-class AlbumTableTest extends PHPUnit_Framework_TestCase
-{
-    public function testFetchAllReturnsAllAlbums()
-    {
+class AlbumTableTest extends PHPUnit_Framework_TestCase{
+    public function testFetchAllReturnsAllAlbums(){
         $resultSet = new ResultSet();
         $mockTableGateway = $this->getMock('Zend\Db\TableGateway\TableGateway',
                                            array('select'), array(), '', false);
@@ -22,8 +20,7 @@ class AlbumTableTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame($resultSet, $albumTable->fetchAll());
     }
-    public function testCanRetrieveAnAlbumByItsId()
-    {
+    public function testCanRetrieveAnAlbumByItsId(){
         $album = new Album();
         $album->exchangeArray(array('id'     => 123,
                                     'artist' => 'The Military Wives',
@@ -44,8 +41,7 @@ class AlbumTableTest extends PHPUnit_Framework_TestCase
         $this->assertSame($album, $albumTable->getAlbum(123));
     }
 
-    public function testCanDeleteAnAlbumByItsId()
-    {
+    public function testCanDeleteAnAlbumByItsId(){
         $mockTableGateway = $this->getMock('Zend\Db\TableGateway\TableGateway', array('delete'), array(), '', false);
         $mockTableGateway->expects($this->once())
                          ->method('delete')
@@ -55,8 +51,7 @@ class AlbumTableTest extends PHPUnit_Framework_TestCase
         $albumTable->deleteAlbum(123);
     }
 
-    public function testSaveAlbumWillInsertNewAlbumsIfTheyDontAlreadyHaveAnId()
-    {
+    public function testSaveAlbumWillInsertNewAlbumsIfTheyDontAlreadyHaveAnId(){
         $albumData = array('artist' => 'The Military Wives', 'title' => 'In My Dreams');
         $album     = new Album();
         $album->exchangeArray($albumData);
@@ -70,8 +65,7 @@ class AlbumTableTest extends PHPUnit_Framework_TestCase
         $albumTable->saveAlbum($album);
     }
 
-    public function testSaveAlbumWillUpdateExistingAlbumsIfTheyAlreadyHaveAnId()
-    {
+    public function testSaveAlbumWillUpdateExistingAlbumsIfTheyAlreadyHaveAnId(){
         $albumData = array('id' => 123, 'artist' => 'The Military Wives', 'title' => 'In My Dreams');
         $album     = new Album();
         $album->exchangeArray($albumData);
@@ -95,8 +89,7 @@ class AlbumTableTest extends PHPUnit_Framework_TestCase
         $albumTable->saveAlbum($album);
     }
 
-    public function testExceptionIsThrownWhenGettingNonExistentAlbum()
-    {
+    public function testExceptionIsThrownWhenGettingNonExistentAlbum(){
         $resultSet = new ResultSet();
         $resultSet->setArrayObjectPrototype(new Album());
         $resultSet->initialize(array());
@@ -120,5 +113,3 @@ class AlbumTableTest extends PHPUnit_Framework_TestCase
         $this->fail('Expected exception was not thrown');
     }
 }
-
-

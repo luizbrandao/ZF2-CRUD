@@ -1,13 +1,13 @@
 <?php
 namespace AlbumRest\Controller;
- 
+
 use Zend\Mvc\Controller\AbstractRestfulController;
- 
+
 use Album\Model\Album;
 use Album\Form\AlbumForm;
 use Album\Model\AlbumTable;
 use Zend\View\Model\JsonModel;
- 
+
 class AlbumRestController extends AbstractRestfulController
 {
 
@@ -21,8 +21,7 @@ class AlbumRestController extends AbstractRestfulController
 		return $this->albumTable;
 	}
 
-	public function getList()
-	{
+	public function getList(){
 		$results = $this->getAlbumTable()->fetchAll();
 		$data = array();
 		foreach($results as $result){
@@ -30,15 +29,13 @@ class AlbumRestController extends AbstractRestfulController
 		}
 		return new JsonModel(array('data' => $data));
 	}
-	 
-	public function get($id)
-	{
+
+	public function get($id){
 		$album = $this->getAlbumTable()->getAlbum($id);
 		return new JsonModel(array('data' => $album));
 	}
-	 
-	public function create($data)
-	{
+
+	public function create($data){
 		$form = new AlbumForm();
 		$album = new Album();
 		$form->setInputFilter($album->getInputFilter());
@@ -49,9 +46,8 @@ class AlbumRestController extends AbstractRestfulController
 		}
 		return  $this->get($id);
 	}
-	 
-	public function update($id, $data)
-	{
+
+	public function update($id, $data){
 		$data['id'] = $id;
 		$album = $this->getAlbumTable()->getAlbum($id);
 		$form = new AlbumForm();
@@ -63,9 +59,8 @@ class AlbumRestController extends AbstractRestfulController
 		}
 		return $this->get($id);
 	}
-	 
-	public function delete($id)
-	{
+
+	public function delete($id){
 		$this->getAlbumTable()->deleteAlbum($id);
 		return new JsonModel(array('data' => 'deleted'));
 	}

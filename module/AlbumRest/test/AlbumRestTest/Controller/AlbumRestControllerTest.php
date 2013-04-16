@@ -1,6 +1,6 @@
 <?php
 namespace AlbumRestTest\Controller;
- 
+
 use AlbumRestTest\Bootstrap;
 use AlbumRest\Controller\AlbumRestController;
 use Zend\Http\Request;
@@ -9,17 +9,15 @@ use Zend\Mvc\MvcEvent;
 use Zend\Mvc\Router\RouteMatch;
 use Zend\Mvc\Router\Http\TreeRouteStack as HttpRouter;
 use PHPUnit_Framework_TestCase;
- 
-class AlbumRestControllerTest extends PHPUnit_Framework_TestCase
-{
+
+class AlbumRestControllerTest extends PHPUnit_Framework_TestCase{
 	protected $controller;
 	protected $request;
 	protected $response;
 	protected $routeMatch;
 	protected $event;
- 
-	protected function setUp()
-	{
+
+	protected function setUp(){
 		$serviceManager = Bootstrap::getServiceManager();
 		$this->controller = new AlbumRestController();
 		$this->request = new Request();
@@ -33,60 +31,55 @@ class AlbumRestControllerTest extends PHPUnit_Framework_TestCase
 		$this->controller->setEvent($this->event);
 		$this->controller->setServiceLocator($serviceManager);
 	}
-	
+
 	public function testGetAlbumTableReturnsAnInstanceOfAlbumTable(){
 		$this->assertInstanceOf('Album\Model\AlbumTable', $this->controller->getAlbumTable());
 	}
-	 
-	public function testGetListCanBeAccessed()
-	{
+
+	public function testGetListCanBeAccessed(){
 		$result = $this->controller->dispatch($this->request);
 		$response = $this->controller->getResponse();
-		 
+			
 		$this->assertEquals(200, $response->getStatusCode());
 	}
-	 
-	public function testGetCanBeAccessed()
-	{
+
+	public function testGetCanBeAccessed(){
 		$this->routeMatch->setParam('id', '1');
-		$this->request->setMethod('get'); 
+		$this->request->setMethod('get');
 		$result = $this->controller->dispatch($this->request);
 		$response = $this->controller->getResponse();
-		 
+			
 		$this->assertEquals(200, $response->getStatusCode());
 	}
-	 
-	public function testCreateCanBeAccessed()
-	{
+
+	public function testCreateCanBeAccessed(){
 		$this->request->setMethod('post');
 		$this->request->getPost()->set('artist', 'foo');
 		$this->request->getPost()->set('title', 'bar');
-		 
+			
 		$result = $this->controller->dispatch($this->request);
 		$response = $this->controller->getResponse();
-		 
+			
 		$this->assertEquals(200, $response->getStatusCode());
 	}
-	 
-	public function testUpdateCanBeAccessed()
-	{
+
+	public function testUpdateCanBeAccessed(){
 		$this->routeMatch->setParam('id', '1');
 		$this->request->setMethod('put');
-		 
+			
 		$result = $this->controller->dispatch($this->request);
 		$response = $this->controller->getResponse();
-		 
+			
 		$this->assertEquals(200, $response->getStatusCode());
 	}
-	 
-	public function testDeleteCanBeAccessed()
-	{
+
+	public function testDeleteCanBeAccessed(){
 		$this->routeMatch->setParam('id', '1');
 		$this->request->setMethod('delete');
-		 
+			
 		$result = $this->controller->dispatch($this->request);
 		$response = $this->controller->getResponse();
-		 
+			
 		$this->assertEquals(200, $response->getStatusCode());
 	}
 }

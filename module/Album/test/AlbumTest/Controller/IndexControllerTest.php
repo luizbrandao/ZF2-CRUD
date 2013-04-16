@@ -14,35 +14,34 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase{
 
 	public function testIndexActionCanBeAccessed(){
 		$albumTableMock = $this->getMockBuilder('Album\Model\AlbumTable')
-                            ->disableOriginalConstructor()
-                            ->getMock();
+		->disableOriginalConstructor()
+		->getMock();
 
-        $albumTableMock->expects($this->once())
-                        ->method('fetchAll')
-                        ->will($this->returnValue(array()));
+		$albumTableMock->expects($this->once())
+		->method('fetchAll')
+		->will($this->returnValue(array()));
 
-        $serviceManager = $this->getApplicationServiceLocator();
-        $serviceManager->setAllowOverride(true);
-        $serviceManager->setService('Album\Model\AlbumTable', $albumTableMock);
+		$serviceManager = $this->getApplicationServiceLocator();
+		$serviceManager->setAllowOverride(true);
+		$serviceManager->setService('Album\Model\AlbumTable', $albumTableMock);
 
-        $this->dispatch('/album');
-        $this->assertResponseStatusCode(200);
+		$this->dispatch('/album');
+		$this->assertResponseStatusCode(200);
 
-        $this->assertModuleName('Album');
-        $this->assertControllerName('Album\Controller\Album');
-        $this->assertControllerClass('AlbumController');
-        $this->assertMatchedRouteName('album');
+		$this->assertModuleName('Album');
+		$this->assertControllerName('Album\Controller\Album');
+		$this->assertControllerClass('AlbumController');
+		$this->assertMatchedRouteName('album');
 	}
-    
-	public function testAddActionRedirectsAfterValidPost()
-	{
-		$albumTableMock = $this->getMockBuilder('Album\Model\AlbumTable')
-            	               ->disableOriginalConstructor()
-                    	       ->getMock();
 
-        $albumTableMock->expects($this->once())
-       		       ->method('saveAlbum')
-                   ->will($this->returnValue(null));
+	public function testAddActionRedirectsAfterValidPost(){
+		$albumTableMock = $this->getMockBuilder('Album\Model\AlbumTable')
+		->disableOriginalConstructor()
+		->getMock();
+
+		$albumTableMock->expects($this->once())
+		->method('saveAlbum')
+		->will($this->returnValue(null));
 
 		$serviceManager = $this->getApplicationServiceLocator();
 		$serviceManager->setAllowOverride(true);
