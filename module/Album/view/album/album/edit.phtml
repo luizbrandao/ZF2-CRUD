@@ -18,8 +18,24 @@ $form->setAttribute('action', $this->url(
 $form->prepare();
 
 echo $this->form()->openTag($form);
-echo $this->formHidden($form->get('id'));
-echo $this->formRow($form->get('title'));
-echo $this->formRow($form->get('artist'));
-echo $this->formSubmit($form->get('submit'));
-echo $this->form()->closeTag();
+echo $this->formHidden($form->get('id'));?>
+<div class="control-group">
+	<?php $title = $form->get('title');?>
+	<?php echo $this->formLabel($title); ?> 
+	<div class="controls">
+			<?php echo $this->formInput($title);?>
+	</div>
+</div>
+<div class="control-group">
+	<?php $artist = $form->get('artist'); ?>
+	<?php echo $this->formLabel($artist);?>
+	<div class="controls">
+			<?php echo $this->formInput($artist); ?>
+	</div>
+</div>
+<div class="control-group">
+	<div class="controls">
+		<?php echo $this->formSubmit($form->get('submit')); ?>
+	</div>
+</div>
+<?php echo $this->form()->closeTag();?>
