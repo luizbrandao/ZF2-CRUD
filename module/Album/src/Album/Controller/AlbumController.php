@@ -9,6 +9,7 @@ use Album\Form\AlbumForm;
 
 class AlbumController extends AbstractActionController{
 	protected $albumTable;
+	
 	public function getAlbumTable(){
 		if(!$this->albumTable){
 			$sm = $this->getServiceLocator();

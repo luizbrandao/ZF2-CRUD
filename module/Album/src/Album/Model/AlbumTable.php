@@ -23,7 +23,7 @@ class AlbumTable {
         $rowset = $this->tableGateway->select(array('id' => $id));
         $row = $rowset->current();
         if (!$row) {
-            throw new Exception("Could not find row $id");
+            throw new \Exception("Could not find row $id");
         }
         return $row;
     }
@@ -36,6 +36,7 @@ class AlbumTable {
         );
 
         $id = (int)$album->id;
+        
         if ($id == 0) {
             $this->tableGateway->insert($data);
         } else {
@@ -45,6 +46,8 @@ class AlbumTable {
                 throw new \Exception('Form id does not exist');
             }
         }
+        
+        return $id;
     }
 
     public function deleteAlbum($id)
