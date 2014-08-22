@@ -53,14 +53,19 @@ class AlbumRestController extends AbstractRestfulController
 	public function update($id, $data){
 		$data['id'] = $id;
 		$album = $this->getAlbumTable()->getAlbum($id);
+		
 		$form = new AlbumForm();
 		$form->bind($album);
 		$form->setInputFilter($album->getInputFilter());
 		$form->setData($data);
+		
 		if($form->isValid()){
 			$id = $this->getAlbumTable()->saveAlbum($form->getData());
 		}
-		return $this->get($id);
+		
+		return new JsonModel(array(
+			'data' => $this->get($id),
+		));
 	}
 
 	public function delete($id){
