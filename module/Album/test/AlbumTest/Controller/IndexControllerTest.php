@@ -8,7 +8,7 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase{
 	protected $traceError = true;
 
 	public function setUp(){
-		$this->setApplicationConfig(include '/var/www/inicio/config/application.config.php');
+		$this->setApplicationConfig(include '/Users/luiz/Sites/Album/config/application.config.php');
 		parent::setUp();
 	}
 
