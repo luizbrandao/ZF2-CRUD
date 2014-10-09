@@ -36,10 +36,13 @@ class AlbumRestController extends AbstractRestfulController
 	}
 
 	public function create($data){
+		
 		$form = new AlbumForm();
 		$album = new Album();
+
 		$form->setInputFilter($album->getInputFilter());
 		$form->setData($data);
+		
 		if($form->isValid()){
 			$album->exchangeArray($form->getData());
 			$id = $this->getAlbumTable()->saveAlbum($album);
