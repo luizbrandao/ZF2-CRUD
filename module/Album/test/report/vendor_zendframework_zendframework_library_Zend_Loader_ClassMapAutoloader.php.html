@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/inicio/vendor/zendframework/zendframework/library/Zend/Loader/ClassMapAutoloader.php</title>
+  <title>Code Coverage for /var/www/html/Album/vendor/zendframework/zendframework/library/Zend/Loader/ClassMapAutoloader.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/inicio</a> <span class="divider">/</span></li>
+        <li><a href="index.html">/var/www/html/Album</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework.html">zendframework</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework_zendframework.html">zendframework</a> <span class="divider">/</span></li>
@@ -60,13 +60,13 @@
 </td>
       <td class="danger small"><div align="right">10.00%</div></td>
       <td class="danger small"><div align="right">1&nbsp;/&nbsp;10</div></td>
-      <td class="danger small"><acronym title="Change Risk Anti-Patterns (CRAP) Index">CRAP</acronym></td>
-      <td class="warning big">       <div class="progress progress-warning" style="width: 100px;">
-        <div class="bar" style="width: 35.00%;"></div>
+      <td class="danger small"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></td>
+      <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
+        <div class="bar" style="width: 33.33%;"></div>
        </div>
 </td>
-      <td class="warning small"><div align="right">35.00%</div></td>
-      <td class="warning small"><div align="right">21&nbsp;/&nbsp;60</div></td>
+      <td class="danger small"><div align="right">33.33%</div></td>
+      <td class="danger small"><div align="right">21&nbsp;/&nbsp;63</div></td>
      </tr>
 
      <tr>
@@ -83,13 +83,13 @@
 </td>
       <td class="danger small"><div align="right">10.00%</div></td>
       <td class="danger small"><div align="right">1&nbsp;/&nbsp;10</div></td>
-      <td class="danger small">277.16</td>
-      <td class="warning big">       <div class="progress progress-warning" style="width: 100px;">
-        <div class="bar" style="width: 35.00%;"></div>
+      <td class="danger small">296.67</td>
+      <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
+        <div class="bar" style="width: 33.33%;"></div>
        </div>
 </td>
-      <td class="warning small"><div align="right">35.00%</div></td>
-      <td class="warning small"><div align="right">21&nbsp;/&nbsp;60</div></td>
+      <td class="danger small"><div align="right">33.33%</div></td>
+      <td class="danger small"><div align="right">21&nbsp;/&nbsp;63</div></td>
      </tr>
 
      <tr>
@@ -470,7 +470,7 @@
      <tr class="success popin" data-title="2 tests cover line 201" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="201"></a><a href="#201">201</a></div></td><td class="codeLine">            return;</td></tr>
      <tr><td><div align="right"><a name="202"></a><a href="#202">202</a></div></td><td class="codeLine">        }</td></tr>
      <tr><td><div align="right"><a name="203"></a><a href="#203">203</a></div></td><td class="codeLine"></td></tr>
-     <tr class="danger"><td><div align="right"><a name="204"></a><a href="#204">204</a></div></td><td class="codeLine">        $parts = explode('/', str_replace(array('/','\\'), '/', substr($path, 8)));</td></tr>
+     <tr class="danger"><td><div align="right"><a name="204"></a><a href="#204">204</a></div></td><td class="codeLine">        $parts = explode('/', str_replace(array('/', '\\'), '/', substr($path, 8)));</td></tr>
      <tr class="danger"><td><div align="right"><a name="205"></a><a href="#205">205</a></div></td><td class="codeLine">        $parts = array_values(array_filter($parts, function ($p) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="206"></a><a href="#206">206</a></div></td><td class="codeLine">            return ($p !== '' &amp;&amp; $p !== '.');</td></tr>
      <tr class="danger"><td><div align="right"><a name="207"></a><a href="#207">207</a></div></td><td class="codeLine">        }));</td></tr>
@@ -482,10 +482,10 @@
      <tr class="danger"><td><div align="right"><a name="213"></a><a href="#213">213</a></div></td><td class="codeLine">            }</td></tr>
      <tr class="danger"><td><div align="right"><a name="214"></a><a href="#214">214</a></div></td><td class="codeLine">        });</td></tr>
      <tr><td><div align="right"><a name="215"></a><a href="#215">215</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="216"></a><a href="#216">216</a></div></td><td class="codeLine">        if (file_exists($realPath = 'phar:///' . implode('/', $parts))) {</td></tr>
-     <tr><td><div align="right"><a name="217"></a><a href="#217">217</a></div></td><td class="codeLine">            return $realPath;</td></tr>
+     <tr class="danger"><td><div align="right"><a name="216"></a><a href="#216">216</a></div></td><td class="codeLine">        if (file_exists($realPath = 'phar:///' . implode('/', $parts))) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="217"></a><a href="#217">217</a></div></td><td class="codeLine">            return $realPath;</td></tr>
      <tr><td><div align="right"><a name="218"></a><a href="#218">218</a></div></td><td class="codeLine">        }</td></tr>
-     <tr><td><div align="right"><a name="219"></a><a href="#219">219</a></div></td><td class="codeLine">    }</td></tr>
+     <tr class="danger"><td><div align="right"><a name="219"></a><a href="#219">219</a></div></td><td class="codeLine">    }</td></tr>
      <tr><td><div align="right"><a name="220"></a><a href="#220">220</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
@@ -498,7 +498,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.9</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.10-1ubuntu3.6</a> and <a href="http://phpunit.de/">PHPUnit 3.7.19</a> at Fri Apr 12 14:54:33 UTC 2013.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.13</a> using <a href="http://www.php.net/" target="_top">PHP 5.6.0-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.28</a> at Tue Oct 7 22:36:47 AMT 2014.</small>
     </p>
    </footer>
   </div>

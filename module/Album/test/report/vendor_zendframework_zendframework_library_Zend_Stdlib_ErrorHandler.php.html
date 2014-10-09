@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/inicio/vendor/zendframework/zendframework/library/Zend/Stdlib/ErrorHandler.php</title>
+  <title>Code Coverage for /var/www/html/Album/vendor/zendframework/zendframework/library/Zend/Stdlib/ErrorHandler.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/inicio</a> <span class="divider">/</span></li>
+        <li><a href="index.html">/var/www/html/Album</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework.html">zendframework</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework_zendframework.html">zendframework</a> <span class="divider">/</span></li>
@@ -60,7 +60,7 @@
 </td>
       <td class="danger small"><div align="right">16.67%</div></td>
       <td class="danger small"><div align="right">1&nbsp;/&nbsp;6</div></td>
-      <td class="danger small"><acronym title="Change Risk Anti-Patterns (CRAP) Index">CRAP</acronym></td>
+      <td class="danger small"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></td>
       <td class="warning big">       <div class="progress progress-warning" style="width: 100px;">
         <div class="bar" style="width: 56.00%;"></div>
        </div>
@@ -228,7 +228,7 @@
      <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine">     * Check if this error handler is active</td></tr>
      <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine">     * @return boolean</td></tr>
+     <tr><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine">     * @return bool</td></tr>
      <tr><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine">    public static function started()</td></tr>
      <tr><td><div align="right"><a name="33"></a><a href="#33">33</a></div></td><td class="codeLine">    {</td></tr>
@@ -252,12 +252,12 @@
      <tr><td><div align="right"><a name="51"></a><a href="#51">51</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="52"></a><a href="#52">52</a></div></td><td class="codeLine">    public static function start($errorLevel = \E_WARNING)</td></tr>
      <tr><td><div align="right"><a name="53"></a><a href="#53">53</a></div></td><td class="codeLine">    {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 54" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="54"></a><a href="#54">54</a></div></td><td class="codeLine">        if (!static::$stack) {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 55" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="55"></a><a href="#55">55</a></div></td><td class="codeLine">            set_error_handler(array(get_called_class(), 'addError'), $errorLevel);</td></tr>
-     <tr class="success popin" data-title="1 test covers line 56" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="56"></a><a href="#56">56</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 54" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="54"></a><a href="#54">54</a></div></td><td class="codeLine">        if (!static::$stack) {</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 55" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="55"></a><a href="#55">55</a></div></td><td class="codeLine">            set_error_handler(array(get_called_class(), 'addError'), $errorLevel);</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 56" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="56"></a><a href="#56">56</a></div></td><td class="codeLine">        }</td></tr>
      <tr><td><div align="right"><a name="57"></a><a href="#57">57</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 58" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="58"></a><a href="#58">58</a></div></td><td class="codeLine">        static::$stack[] = null;</td></tr>
-     <tr class="success popin" data-title="1 test covers line 59" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="59"></a><a href="#59">59</a></div></td><td class="codeLine">    }</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 58" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="58"></a><a href="#58">58</a></div></td><td class="codeLine">        static::$stack[] = null;</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 59" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="59"></a><a href="#59">59</a></div></td><td class="codeLine">    }</td></tr>
      <tr><td><div align="right"><a name="60"></a><a href="#60">60</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="61"></a><a href="#61">61</a></div></td><td class="codeLine">    /**</td></tr>
      <tr><td><div align="right"><a name="62"></a><a href="#62">62</a></div></td><td class="codeLine">     * Stopping the error handler</td></tr>
@@ -268,21 +268,21 @@
      <tr><td><div align="right"><a name="67"></a><a href="#67">67</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="68"></a><a href="#68">68</a></div></td><td class="codeLine">    public static function stop($throw = false)</td></tr>
      <tr><td><div align="right"><a name="69"></a><a href="#69">69</a></div></td><td class="codeLine">    {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 70" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine">        $errorException = null;</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 70" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine">        $errorException = null;</td></tr>
      <tr><td><div align="right"><a name="71"></a><a href="#71">71</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 72" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="72"></a><a href="#72">72</a></div></td><td class="codeLine">        if (static::$stack) {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 73" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="73"></a><a href="#73">73</a></div></td><td class="codeLine">            $errorException = array_pop(static::$stack);</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 72" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="72"></a><a href="#72">72</a></div></td><td class="codeLine">        if (static::$stack) {</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 73" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="73"></a><a href="#73">73</a></div></td><td class="codeLine">            $errorException = array_pop(static::$stack);</td></tr>
      <tr><td><div align="right"><a name="74"></a><a href="#74">74</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 75" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="75"></a><a href="#75">75</a></div></td><td class="codeLine">            if (!static::$stack) {</td></tr>
-     <tr class="success popin" data-title="1 test covers line 76" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="76"></a><a href="#76">76</a></div></td><td class="codeLine">                restore_error_handler();</td></tr>
-     <tr class="success popin" data-title="1 test covers line 77" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="77"></a><a href="#77">77</a></div></td><td class="codeLine">            }</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 75" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="75"></a><a href="#75">75</a></div></td><td class="codeLine">            if (!static::$stack) {</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 76" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="76"></a><a href="#76">76</a></div></td><td class="codeLine">                restore_error_handler();</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 77" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="77"></a><a href="#77">77</a></div></td><td class="codeLine">            }</td></tr>
      <tr><td><div align="right"><a name="78"></a><a href="#78">78</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 79" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="79"></a><a href="#79">79</a></div></td><td class="codeLine">            if ($errorException &amp;&amp; $throw) {</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 79" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="79"></a><a href="#79">79</a></div></td><td class="codeLine">            if ($errorException &amp;&amp; $throw) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="80"></a><a href="#80">80</a></div></td><td class="codeLine">                throw $errorException;</td></tr>
      <tr><td><div align="right"><a name="81"></a><a href="#81">81</a></div></td><td class="codeLine">            }</td></tr>
-     <tr class="success popin" data-title="1 test covers line 82" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="82"></a><a href="#82">82</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 82" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="82"></a><a href="#82">82</a></div></td><td class="codeLine">        }</td></tr>
      <tr><td><div align="right"><a name="83"></a><a href="#83">83</a></div></td><td class="codeLine"></td></tr>
-     <tr class="success popin" data-title="1 test covers line 84" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="84"></a><a href="#84">84</a></div></td><td class="codeLine">        return $errorException;</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 84" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testIndexActionCanBeAccessed&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="84"></a><a href="#84">84</a></div></td><td class="codeLine">        return $errorException;</td></tr>
      <tr><td><div align="right"><a name="85"></a><a href="#85">85</a></div></td><td class="codeLine">    }</td></tr>
      <tr><td><div align="right"><a name="86"></a><a href="#86">86</a></div></td><td class="codeLine"></td></tr>
      <tr><td><div align="right"><a name="87"></a><a href="#87">87</a></div></td><td class="codeLine">    /**</td></tr>
@@ -310,7 +310,7 @@
      <tr><td><div align="right"><a name="109"></a><a href="#109">109</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine">    public static function addError($errno, $errstr = '', $errfile = '', $errline = 0)</td></tr>
      <tr><td><div align="right"><a name="111"></a><a href="#111">111</a></div></td><td class="codeLine">    {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">        $stack = &amp; static::$stack[ count(static::$stack) - 1 ];</td></tr>
+     <tr class="danger"><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">        $stack = &amp; static::$stack[count(static::$stack) - 1];</td></tr>
      <tr class="danger"><td><div align="right"><a name="113"></a><a href="#113">113</a></div></td><td class="codeLine">        $stack = new ErrorException($errstr, 0, $errno, $errfile, $errline, $stack);</td></tr>
      <tr class="danger"><td><div align="right"><a name="114"></a><a href="#114">114</a></div></td><td class="codeLine">    }</td></tr>
      <tr><td><div align="right"><a name="115"></a><a href="#115">115</a></div></td><td class="codeLine">}</td></tr>
@@ -325,7 +325,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.9</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.10-1ubuntu3.6</a> and <a href="http://phpunit.de/">PHPUnit 3.7.19</a> at Fri Apr 12 14:54:33 UTC 2013.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.13</a> using <a href="http://www.php.net/" target="_top">PHP 5.6.0-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.28</a> at Tue Oct 7 22:36:47 AMT 2014.</small>
     </p>
    </footer>
   </div>

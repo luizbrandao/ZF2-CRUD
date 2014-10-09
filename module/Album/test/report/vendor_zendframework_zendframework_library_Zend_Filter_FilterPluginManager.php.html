@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/inicio/vendor/zendframework/zendframework/library/Zend/Filter/FilterPluginManager.php</title>
+  <title>Code Coverage for /var/www/html/Album/vendor/zendframework/zendframework/library/Zend/Filter/FilterPluginManager.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/inicio</a> <span class="divider">/</span></li>
+        <li><a href="index.html">/var/www/html/Album</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework.html">zendframework</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework_zendframework.html">zendframework</a> <span class="divider">/</span></li>
@@ -60,7 +60,7 @@
 </td>
       <td class="danger small"><div align="right">0.00%</div></td>
       <td class="danger small"><div align="right">0&nbsp;/&nbsp;1</div></td>
-      <td class="danger small"><acronym title="Change Risk Anti-Patterns (CRAP) Index">CRAP</acronym></td>
+      <td class="danger small"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></td>
       <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
         <div class="bar" style="width: 25.00%;"></div>
        </div>
@@ -93,7 +93,7 @@
      </tr>
 
      <tr>
-      <td class="danger" colspan="4">&nbsp;<a href="#101">validatePlugin($plugin)</a></td>
+      <td class="danger" colspan="4">&nbsp;<a href="#100">validatePlugin($plugin)</a></td>
       <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
         <div class="bar" style="width: 0.00%;"></div>
        </div>
@@ -155,83 +155,82 @@
      <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine">        'compresssnappy'            =&gt; 'Zend\Filter\Compress\Snappy',</td></tr>
      <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine">        'compresstar'               =&gt; 'Zend\Filter\Compress\Tar',</td></tr>
      <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine">        'compresszip'               =&gt; 'Zend\Filter\Compress\Zip',</td></tr>
-     <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine">        'decompress'                =&gt; 'Zend\Filter\Decompress',</td></tr>
-     <tr><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine">        'decrypt'                   =&gt; 'Zend\Filter\Decrypt',</td></tr>
-     <tr><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine">        'digits'                    =&gt; 'Zend\Filter\Digits',</td></tr>
-     <tr><td><div align="right"><a name="45"></a><a href="#45">45</a></div></td><td class="codeLine">        'dir'                       =&gt; 'Zend\Filter\Dir',</td></tr>
-     <tr><td><div align="right"><a name="46"></a><a href="#46">46</a></div></td><td class="codeLine">        'encrypt'                   =&gt; 'Zend\Filter\Encrypt',</td></tr>
-     <tr><td><div align="right"><a name="47"></a><a href="#47">47</a></div></td><td class="codeLine">        'encryptblockcipher'        =&gt; 'Zend\Filter\Encrypt\BlockCipher',</td></tr>
-     <tr><td><div align="right"><a name="48"></a><a href="#48">48</a></div></td><td class="codeLine">        'encryptopenssl'            =&gt; 'Zend\Filter\Encrypt\Openssl',</td></tr>
-     <tr><td><div align="right"><a name="49"></a><a href="#49">49</a></div></td><td class="codeLine">        'filedecrypt'               =&gt; 'Zend\Filter\File\Decrypt',</td></tr>
-     <tr><td><div align="right"><a name="50"></a><a href="#50">50</a></div></td><td class="codeLine">        'fileencrypt'               =&gt; 'Zend\Filter\File\Encrypt',</td></tr>
-     <tr><td><div align="right"><a name="51"></a><a href="#51">51</a></div></td><td class="codeLine">        'filelowercase'             =&gt; 'Zend\Filter\File\LowerCase',</td></tr>
-     <tr><td><div align="right"><a name="52"></a><a href="#52">52</a></div></td><td class="codeLine">        'filerename'                =&gt; 'Zend\Filter\File\Rename',</td></tr>
-     <tr><td><div align="right"><a name="53"></a><a href="#53">53</a></div></td><td class="codeLine">        'filerenameupload'          =&gt; 'Zend\Filter\File\RenameUpload',</td></tr>
-     <tr><td><div align="right"><a name="54"></a><a href="#54">54</a></div></td><td class="codeLine">        'fileuppercase'             =&gt; 'Zend\Filter\File\UpperCase',</td></tr>
-     <tr><td><div align="right"><a name="55"></a><a href="#55">55</a></div></td><td class="codeLine">        'htmlentities'              =&gt; 'Zend\Filter\HtmlEntities',</td></tr>
-     <tr><td><div align="right"><a name="56"></a><a href="#56">56</a></div></td><td class="codeLine">        'inflector'                 =&gt; 'Zend\Filter\Inflector',</td></tr>
-     <tr><td><div align="right"><a name="57"></a><a href="#57">57</a></div></td><td class="codeLine">        'int'                       =&gt; 'Zend\Filter\Int',</td></tr>
-     <tr><td><div align="right"><a name="58"></a><a href="#58">58</a></div></td><td class="codeLine">        'localizedtonormalized'     =&gt; 'Zend\Filter\LocalizedToNormalized',</td></tr>
-     <tr><td><div align="right"><a name="59"></a><a href="#59">59</a></div></td><td class="codeLine">        'normalizedtolocalized'     =&gt; 'Zend\Filter\NormalizedToLocalized',</td></tr>
-     <tr><td><div align="right"><a name="60"></a><a href="#60">60</a></div></td><td class="codeLine">        'null'                      =&gt; 'Zend\Filter\Null',</td></tr>
-     <tr><td><div align="right"><a name="61"></a><a href="#61">61</a></div></td><td class="codeLine">        'numberformat'              =&gt; 'Zend\I18n\Filter\NumberFormat',</td></tr>
-     <tr><td><div align="right"><a name="62"></a><a href="#62">62</a></div></td><td class="codeLine">        'pregreplace'               =&gt; 'Zend\Filter\PregReplace',</td></tr>
-     <tr><td><div align="right"><a name="63"></a><a href="#63">63</a></div></td><td class="codeLine">        'realpath'                  =&gt; 'Zend\Filter\RealPath',</td></tr>
-     <tr><td><div align="right"><a name="64"></a><a href="#64">64</a></div></td><td class="codeLine">        'stringtolower'             =&gt; 'Zend\Filter\StringToLower',</td></tr>
-     <tr><td><div align="right"><a name="65"></a><a href="#65">65</a></div></td><td class="codeLine">        'stringtoupper'             =&gt; 'Zend\Filter\StringToUpper',</td></tr>
-     <tr><td><div align="right"><a name="66"></a><a href="#66">66</a></div></td><td class="codeLine">        'stringtrim'                =&gt; 'Zend\Filter\StringTrim',</td></tr>
-     <tr><td><div align="right"><a name="67"></a><a href="#67">67</a></div></td><td class="codeLine">        'stripnewlines'             =&gt; 'Zend\Filter\StripNewlines',</td></tr>
-     <tr><td><div align="right"><a name="68"></a><a href="#68">68</a></div></td><td class="codeLine">        'striptags'                 =&gt; 'Zend\Filter\StripTags',</td></tr>
-     <tr><td><div align="right"><a name="69"></a><a href="#69">69</a></div></td><td class="codeLine">        'urinormalize'              =&gt; 'Zend\Filter\UriNormalize',</td></tr>
-     <tr><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine">        'wordcamelcasetodash'       =&gt; 'Zend\Filter\Word\CamelCaseToDash',</td></tr>
-     <tr><td><div align="right"><a name="71"></a><a href="#71">71</a></div></td><td class="codeLine">        'wordcamelcasetoseparator'  =&gt; 'Zend\Filter\Word\CamelCaseToSeparator',</td></tr>
-     <tr><td><div align="right"><a name="72"></a><a href="#72">72</a></div></td><td class="codeLine">        'wordcamelcasetounderscore' =&gt; 'Zend\Filter\Word\CamelCaseToUnderscore',</td></tr>
-     <tr><td><div align="right"><a name="73"></a><a href="#73">73</a></div></td><td class="codeLine">        'worddashtocamelcase'       =&gt; 'Zend\Filter\Word\DashToCamelCase',</td></tr>
-     <tr><td><div align="right"><a name="74"></a><a href="#74">74</a></div></td><td class="codeLine">        'worddashtoseparator'       =&gt; 'Zend\Filter\Word\DashToSeparator',</td></tr>
-     <tr><td><div align="right"><a name="75"></a><a href="#75">75</a></div></td><td class="codeLine">        'worddashtounderscore'      =&gt; 'Zend\Filter\Word\DashToUnderscore',</td></tr>
-     <tr><td><div align="right"><a name="76"></a><a href="#76">76</a></div></td><td class="codeLine">        'wordseparatortocamelcase'  =&gt; 'Zend\Filter\Word\SeparatorToCamelCase',</td></tr>
-     <tr><td><div align="right"><a name="77"></a><a href="#77">77</a></div></td><td class="codeLine">        'wordseparatortodash'       =&gt; 'Zend\Filter\Word\SeparatorToDash',</td></tr>
-     <tr><td><div align="right"><a name="78"></a><a href="#78">78</a></div></td><td class="codeLine">        'wordseparatortoseparator'  =&gt; 'Zend\Filter\Word\SeparatorToSeparator',</td></tr>
-     <tr><td><div align="right"><a name="79"></a><a href="#79">79</a></div></td><td class="codeLine">        'wordunderscoretocamelcase' =&gt; 'Zend\Filter\Word\UnderscoreToCamelCase',</td></tr>
-     <tr><td><div align="right"><a name="80"></a><a href="#80">80</a></div></td><td class="codeLine">        'wordunderscoretodash'      =&gt; 'Zend\Filter\Word\UnderscoreToDash',</td></tr>
-     <tr><td><div align="right"><a name="81"></a><a href="#81">81</a></div></td><td class="codeLine">        'wordunderscoretoseparator' =&gt; 'Zend\Filter\Word\UnderscoreToSeparator',</td></tr>
-     <tr><td><div align="right"><a name="82"></a><a href="#82">82</a></div></td><td class="codeLine">    );</td></tr>
-     <tr><td><div align="right"><a name="83"></a><a href="#83">83</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="84"></a><a href="#84">84</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="85"></a><a href="#85">85</a></div></td><td class="codeLine">     * Whether or not to share by default; default to false</td></tr>
-     <tr><td><div align="right"><a name="86"></a><a href="#86">86</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="87"></a><a href="#87">87</a></div></td><td class="codeLine">     * @var bool</td></tr>
-     <tr><td><div align="right"><a name="88"></a><a href="#88">88</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="89"></a><a href="#89">89</a></div></td><td class="codeLine">    protected $shareByDefault = false;</td></tr>
-     <tr><td><div align="right"><a name="90"></a><a href="#90">90</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="91"></a><a href="#91">91</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="92"></a><a href="#92">92</a></div></td><td class="codeLine">     * Validate the plugin</td></tr>
-     <tr><td><div align="right"><a name="93"></a><a href="#93">93</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="94"></a><a href="#94">94</a></div></td><td class="codeLine">     * Checks that the filter loaded is either a valid callback or an instance</td></tr>
-     <tr><td><div align="right"><a name="95"></a><a href="#95">95</a></div></td><td class="codeLine">     * of FilterInterface.</td></tr>
-     <tr><td><div align="right"><a name="96"></a><a href="#96">96</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="97"></a><a href="#97">97</a></div></td><td class="codeLine">     * @param  mixed $plugin</td></tr>
-     <tr><td><div align="right"><a name="98"></a><a href="#98">98</a></div></td><td class="codeLine">     * @return void</td></tr>
-     <tr><td><div align="right"><a name="99"></a><a href="#99">99</a></div></td><td class="codeLine">     * @throws Exception\RuntimeException if invalid</td></tr>
-     <tr><td><div align="right"><a name="100"></a><a href="#100">100</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="101"></a><a href="#101">101</a></div></td><td class="codeLine">    public function validatePlugin($plugin)</td></tr>
-     <tr><td><div align="right"><a name="102"></a><a href="#102">102</a></div></td><td class="codeLine">    {</td></tr>
-     <tr class="success popin" data-title="2 tests cover line 103" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Model\AlbumTest::testInputFiltersAreSetCorrectly&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="103"></a><a href="#103">103</a></div></td><td class="codeLine">        if ($plugin instanceof FilterInterface) {</td></tr>
-     <tr><td><div align="right"><a name="104"></a><a href="#104">104</a></div></td><td class="codeLine">            // we're okay</td></tr>
-     <tr class="success popin" data-title="2 tests cover line 105" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Model\AlbumTest::testInputFiltersAreSetCorrectly&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="105"></a><a href="#105">105</a></div></td><td class="codeLine">            return;</td></tr>
-     <tr><td><div align="right"><a name="106"></a><a href="#106">106</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="107"></a><a href="#107">107</a></div></td><td class="codeLine">        if (is_callable($plugin)) {</td></tr>
-     <tr><td><div align="right"><a name="108"></a><a href="#108">108</a></div></td><td class="codeLine">            // also okay</td></tr>
-     <tr class="danger"><td><div align="right"><a name="109"></a><a href="#109">109</a></div></td><td class="codeLine">            return;</td></tr>
-     <tr><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine">        }</td></tr>
-     <tr><td><div align="right"><a name="111"></a><a href="#111">111</a></div></td><td class="codeLine"></td></tr>
-     <tr class="danger"><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">        throw new Exception\RuntimeException(sprintf(</td></tr>
-     <tr class="danger"><td><div align="right"><a name="113"></a><a href="#113">113</a></div></td><td class="codeLine">            'Plugin of type %s is invalid; must implement %s\FilterInterface or be callable',</td></tr>
-     <tr class="danger"><td><div align="right"><a name="114"></a><a href="#114">114</a></div></td><td class="codeLine">            (is_object($plugin) ? get_class($plugin) : gettype($plugin)),</td></tr>
-     <tr><td><div align="right"><a name="115"></a><a href="#115">115</a></div></td><td class="codeLine">            __NAMESPACE__</td></tr>
-     <tr class="danger"><td><div align="right"><a name="116"></a><a href="#116">116</a></div></td><td class="codeLine">        ));</td></tr>
-     <tr><td><div align="right"><a name="117"></a><a href="#117">117</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="118"></a><a href="#118">118</a></div></td><td class="codeLine">}</td></tr>
+     <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine">        'datetimeformatter'         =&gt; 'Zend\Filter\DateTimeFormatter',</td></tr>
+     <tr><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine">        'decompress'                =&gt; 'Zend\Filter\Decompress',</td></tr>
+     <tr><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine">        'decrypt'                   =&gt; 'Zend\Filter\Decrypt',</td></tr>
+     <tr><td><div align="right"><a name="45"></a><a href="#45">45</a></div></td><td class="codeLine">        'digits'                    =&gt; 'Zend\Filter\Digits',</td></tr>
+     <tr><td><div align="right"><a name="46"></a><a href="#46">46</a></div></td><td class="codeLine">        'dir'                       =&gt; 'Zend\Filter\Dir',</td></tr>
+     <tr><td><div align="right"><a name="47"></a><a href="#47">47</a></div></td><td class="codeLine">        'encrypt'                   =&gt; 'Zend\Filter\Encrypt',</td></tr>
+     <tr><td><div align="right"><a name="48"></a><a href="#48">48</a></div></td><td class="codeLine">        'encryptblockcipher'        =&gt; 'Zend\Filter\Encrypt\BlockCipher',</td></tr>
+     <tr><td><div align="right"><a name="49"></a><a href="#49">49</a></div></td><td class="codeLine">        'encryptopenssl'            =&gt; 'Zend\Filter\Encrypt\Openssl',</td></tr>
+     <tr><td><div align="right"><a name="50"></a><a href="#50">50</a></div></td><td class="codeLine">        'filedecrypt'               =&gt; 'Zend\Filter\File\Decrypt',</td></tr>
+     <tr><td><div align="right"><a name="51"></a><a href="#51">51</a></div></td><td class="codeLine">        'fileencrypt'               =&gt; 'Zend\Filter\File\Encrypt',</td></tr>
+     <tr><td><div align="right"><a name="52"></a><a href="#52">52</a></div></td><td class="codeLine">        'filelowercase'             =&gt; 'Zend\Filter\File\LowerCase',</td></tr>
+     <tr><td><div align="right"><a name="53"></a><a href="#53">53</a></div></td><td class="codeLine">        'filerename'                =&gt; 'Zend\Filter\File\Rename',</td></tr>
+     <tr><td><div align="right"><a name="54"></a><a href="#54">54</a></div></td><td class="codeLine">        'filerenameupload'          =&gt; 'Zend\Filter\File\RenameUpload',</td></tr>
+     <tr><td><div align="right"><a name="55"></a><a href="#55">55</a></div></td><td class="codeLine">        'fileuppercase'             =&gt; 'Zend\Filter\File\UpperCase',</td></tr>
+     <tr><td><div align="right"><a name="56"></a><a href="#56">56</a></div></td><td class="codeLine">        'htmlentities'              =&gt; 'Zend\Filter\HtmlEntities',</td></tr>
+     <tr><td><div align="right"><a name="57"></a><a href="#57">57</a></div></td><td class="codeLine">        'inflector'                 =&gt; 'Zend\Filter\Inflector',</td></tr>
+     <tr><td><div align="right"><a name="58"></a><a href="#58">58</a></div></td><td class="codeLine">        'int'                       =&gt; 'Zend\Filter\Int',</td></tr>
+     <tr><td><div align="right"><a name="59"></a><a href="#59">59</a></div></td><td class="codeLine">        'null'                      =&gt; 'Zend\Filter\Null',</td></tr>
+     <tr><td><div align="right"><a name="60"></a><a href="#60">60</a></div></td><td class="codeLine">        'numberformat'              =&gt; 'Zend\I18n\Filter\NumberFormat',</td></tr>
+     <tr><td><div align="right"><a name="61"></a><a href="#61">61</a></div></td><td class="codeLine">        'pregreplace'               =&gt; 'Zend\Filter\PregReplace',</td></tr>
+     <tr><td><div align="right"><a name="62"></a><a href="#62">62</a></div></td><td class="codeLine">        'realpath'                  =&gt; 'Zend\Filter\RealPath',</td></tr>
+     <tr><td><div align="right"><a name="63"></a><a href="#63">63</a></div></td><td class="codeLine">        'stringtolower'             =&gt; 'Zend\Filter\StringToLower',</td></tr>
+     <tr><td><div align="right"><a name="64"></a><a href="#64">64</a></div></td><td class="codeLine">        'stringtoupper'             =&gt; 'Zend\Filter\StringToUpper',</td></tr>
+     <tr><td><div align="right"><a name="65"></a><a href="#65">65</a></div></td><td class="codeLine">        'stringtrim'                =&gt; 'Zend\Filter\StringTrim',</td></tr>
+     <tr><td><div align="right"><a name="66"></a><a href="#66">66</a></div></td><td class="codeLine">        'stripnewlines'             =&gt; 'Zend\Filter\StripNewlines',</td></tr>
+     <tr><td><div align="right"><a name="67"></a><a href="#67">67</a></div></td><td class="codeLine">        'striptags'                 =&gt; 'Zend\Filter\StripTags',</td></tr>
+     <tr><td><div align="right"><a name="68"></a><a href="#68">68</a></div></td><td class="codeLine">        'urinormalize'              =&gt; 'Zend\Filter\UriNormalize',</td></tr>
+     <tr><td><div align="right"><a name="69"></a><a href="#69">69</a></div></td><td class="codeLine">        'wordcamelcasetodash'       =&gt; 'Zend\Filter\Word\CamelCaseToDash',</td></tr>
+     <tr><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine">        'wordcamelcasetoseparator'  =&gt; 'Zend\Filter\Word\CamelCaseToSeparator',</td></tr>
+     <tr><td><div align="right"><a name="71"></a><a href="#71">71</a></div></td><td class="codeLine">        'wordcamelcasetounderscore' =&gt; 'Zend\Filter\Word\CamelCaseToUnderscore',</td></tr>
+     <tr><td><div align="right"><a name="72"></a><a href="#72">72</a></div></td><td class="codeLine">        'worddashtocamelcase'       =&gt; 'Zend\Filter\Word\DashToCamelCase',</td></tr>
+     <tr><td><div align="right"><a name="73"></a><a href="#73">73</a></div></td><td class="codeLine">        'worddashtoseparator'       =&gt; 'Zend\Filter\Word\DashToSeparator',</td></tr>
+     <tr><td><div align="right"><a name="74"></a><a href="#74">74</a></div></td><td class="codeLine">        'worddashtounderscore'      =&gt; 'Zend\Filter\Word\DashToUnderscore',</td></tr>
+     <tr><td><div align="right"><a name="75"></a><a href="#75">75</a></div></td><td class="codeLine">        'wordseparatortocamelcase'  =&gt; 'Zend\Filter\Word\SeparatorToCamelCase',</td></tr>
+     <tr><td><div align="right"><a name="76"></a><a href="#76">76</a></div></td><td class="codeLine">        'wordseparatortodash'       =&gt; 'Zend\Filter\Word\SeparatorToDash',</td></tr>
+     <tr><td><div align="right"><a name="77"></a><a href="#77">77</a></div></td><td class="codeLine">        'wordseparatortoseparator'  =&gt; 'Zend\Filter\Word\SeparatorToSeparator',</td></tr>
+     <tr><td><div align="right"><a name="78"></a><a href="#78">78</a></div></td><td class="codeLine">        'wordunderscoretocamelcase' =&gt; 'Zend\Filter\Word\UnderscoreToCamelCase',</td></tr>
+     <tr><td><div align="right"><a name="79"></a><a href="#79">79</a></div></td><td class="codeLine">        'wordunderscoretodash'      =&gt; 'Zend\Filter\Word\UnderscoreToDash',</td></tr>
+     <tr><td><div align="right"><a name="80"></a><a href="#80">80</a></div></td><td class="codeLine">        'wordunderscoretoseparator' =&gt; 'Zend\Filter\Word\UnderscoreToSeparator',</td></tr>
+     <tr><td><div align="right"><a name="81"></a><a href="#81">81</a></div></td><td class="codeLine">    );</td></tr>
+     <tr><td><div align="right"><a name="82"></a><a href="#82">82</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="83"></a><a href="#83">83</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="84"></a><a href="#84">84</a></div></td><td class="codeLine">     * Whether or not to share by default; default to false</td></tr>
+     <tr><td><div align="right"><a name="85"></a><a href="#85">85</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="86"></a><a href="#86">86</a></div></td><td class="codeLine">     * @var bool</td></tr>
+     <tr><td><div align="right"><a name="87"></a><a href="#87">87</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="88"></a><a href="#88">88</a></div></td><td class="codeLine">    protected $shareByDefault = false;</td></tr>
+     <tr><td><div align="right"><a name="89"></a><a href="#89">89</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="90"></a><a href="#90">90</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="91"></a><a href="#91">91</a></div></td><td class="codeLine">     * Validate the plugin</td></tr>
+     <tr><td><div align="right"><a name="92"></a><a href="#92">92</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="93"></a><a href="#93">93</a></div></td><td class="codeLine">     * Checks that the filter loaded is either a valid callback or an instance</td></tr>
+     <tr><td><div align="right"><a name="94"></a><a href="#94">94</a></div></td><td class="codeLine">     * of FilterInterface.</td></tr>
+     <tr><td><div align="right"><a name="95"></a><a href="#95">95</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="96"></a><a href="#96">96</a></div></td><td class="codeLine">     * @param  mixed $plugin</td></tr>
+     <tr><td><div align="right"><a name="97"></a><a href="#97">97</a></div></td><td class="codeLine">     * @return void</td></tr>
+     <tr><td><div align="right"><a name="98"></a><a href="#98">98</a></div></td><td class="codeLine">     * @throws Exception\RuntimeException if invalid</td></tr>
+     <tr><td><div align="right"><a name="99"></a><a href="#99">99</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="100"></a><a href="#100">100</a></div></td><td class="codeLine">    public function validatePlugin($plugin)</td></tr>
+     <tr><td><div align="right"><a name="101"></a><a href="#101">101</a></div></td><td class="codeLine">    {</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 102" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Model\AlbumTest::testInputFiltersAreSetCorrectly&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="102"></a><a href="#102">102</a></div></td><td class="codeLine">        if ($plugin instanceof FilterInterface) {</td></tr>
+     <tr><td><div align="right"><a name="103"></a><a href="#103">103</a></div></td><td class="codeLine">            // we're okay</td></tr>
+     <tr class="success popin" data-title="2 tests cover line 104" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Controller\AlbumControllerTest::testAddActionRedirectsAfterValidPost&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;AlbumTest\Model\AlbumTest::testInputFiltersAreSetCorrectly&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="104"></a><a href="#104">104</a></div></td><td class="codeLine">            return;</td></tr>
+     <tr><td><div align="right"><a name="105"></a><a href="#105">105</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="danger"><td><div align="right"><a name="106"></a><a href="#106">106</a></div></td><td class="codeLine">        if (is_callable($plugin)) {</td></tr>
+     <tr><td><div align="right"><a name="107"></a><a href="#107">107</a></div></td><td class="codeLine">            // also okay</td></tr>
+     <tr class="danger"><td><div align="right"><a name="108"></a><a href="#108">108</a></div></td><td class="codeLine">            return;</td></tr>
+     <tr><td><div align="right"><a name="109"></a><a href="#109">109</a></div></td><td class="codeLine">        }</td></tr>
+     <tr><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine"></td></tr>
+     <tr class="danger"><td><div align="right"><a name="111"></a><a href="#111">111</a></div></td><td class="codeLine">        throw new Exception\RuntimeException(sprintf(</td></tr>
+     <tr class="danger"><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">            'Plugin of type %s is invalid; must implement %s\FilterInterface or be callable',</td></tr>
+     <tr class="danger"><td><div align="right"><a name="113"></a><a href="#113">113</a></div></td><td class="codeLine">            (is_object($plugin) ? get_class($plugin) : gettype($plugin)),</td></tr>
+     <tr><td><div align="right"><a name="114"></a><a href="#114">114</a></div></td><td class="codeLine">            __NAMESPACE__</td></tr>
+     <tr class="danger"><td><div align="right"><a name="115"></a><a href="#115">115</a></div></td><td class="codeLine">        ));</td></tr>
+     <tr><td><div align="right"><a name="116"></a><a href="#116">116</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="117"></a><a href="#117">117</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
    </table>
@@ -243,7 +242,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.9</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.10-1ubuntu3.6</a> and <a href="http://phpunit.de/">PHPUnit 3.7.19</a> at Fri Apr 12 14:54:33 UTC 2013.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.13</a> using <a href="http://www.php.net/" target="_top">PHP 5.6.0-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.28</a> at Tue Oct 7 22:36:47 AMT 2014.</small>
     </p>
    </footer>
   </div>

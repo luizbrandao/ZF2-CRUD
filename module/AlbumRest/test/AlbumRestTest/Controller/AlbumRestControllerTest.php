@@ -64,7 +64,7 @@ class AlbumRestControllerTest extends PHPUnit_Framework_TestCase{
 	}
 
 	public function testUpdateCanBeAccessed(){
-		$this->routeMatch->setParam('id', '14');
+		$this->routeMatch->setParam('id', '15');
 		$this->request->setMethod('put');
 			
 		$result = $this->controller->dispatch($this->request);

@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/inicio/vendor/zendframework/zendframework/library/Zend/Stdlib/StringWrapper/StringWrapperInterface.php</title>
+  <title>Code Coverage for /var/www/html/Album/vendor/zendframework/zendframework/library/Zend/Stdlib/StringWrapper/StringWrapperInterface.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/inicio</a> <span class="divider">/</span></li>
+        <li><a href="index.html">/var/www/html/Album</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework.html">zendframework</a> <span class="divider">/</span></li>
         <li><a href="vendor_zendframework_zendframework.html">zendframework</a> <span class="divider">/</span></li>
@@ -55,7 +55,7 @@
       <td class="None big">&nbsp;</td>
       <td class="None small"><div align="right"></div></td>
       <td class="None small"><div align="right">&nbsp;</div></td>
-      <td class="None small"><acronym title="Change Risk Anti-Patterns (CRAP) Index">CRAP</acronym></td>
+      <td class="None small"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></td>
       <td class="None big">&nbsp;</td>
       <td class="None small"><div align="right"></div></td>
       <td class="None small"><div align="right">&nbsp;</div></td>
@@ -150,7 +150,7 @@
      <tr><td><div align="right"><a name="82"></a><a href="#82">82</a></div></td><td class="codeLine">     * Convert a string from defined encoding to the defined convert encoding</td></tr>
      <tr><td><div align="right"><a name="83"></a><a href="#83">83</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="84"></a><a href="#84">84</a></div></td><td class="codeLine">     * @param string  $str</td></tr>
-     <tr><td><div align="right"><a name="85"></a><a href="#85">85</a></div></td><td class="codeLine">     * @param boolean $reverse</td></tr>
+     <tr><td><div align="right"><a name="85"></a><a href="#85">85</a></div></td><td class="codeLine">     * @param bool $reverse</td></tr>
      <tr><td><div align="right"><a name="86"></a><a href="#86">86</a></div></td><td class="codeLine">     * @return string|false</td></tr>
      <tr><td><div align="right"><a name="87"></a><a href="#87">87</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="88"></a><a href="#88">88</a></div></td><td class="codeLine">    public function convert($str, $reverse = false);</td></tr>
@@ -159,9 +159,9 @@
      <tr><td><div align="right"><a name="91"></a><a href="#91">91</a></div></td><td class="codeLine">     * Wraps a string to a given number of characters</td></tr>
      <tr><td><div align="right"><a name="92"></a><a href="#92">92</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="93"></a><a href="#93">93</a></div></td><td class="codeLine">     * @param  string  $str</td></tr>
-     <tr><td><div align="right"><a name="94"></a><a href="#94">94</a></div></td><td class="codeLine">     * @param  integer $width</td></tr>
+     <tr><td><div align="right"><a name="94"></a><a href="#94">94</a></div></td><td class="codeLine">     * @param  int $width</td></tr>
      <tr><td><div align="right"><a name="95"></a><a href="#95">95</a></div></td><td class="codeLine">     * @param  string  $break</td></tr>
-     <tr><td><div align="right"><a name="96"></a><a href="#96">96</a></div></td><td class="codeLine">     * @param  boolean $cut</td></tr>
+     <tr><td><div align="right"><a name="96"></a><a href="#96">96</a></div></td><td class="codeLine">     * @param  bool $cut</td></tr>
      <tr><td><div align="right"><a name="97"></a><a href="#97">97</a></div></td><td class="codeLine">     * @return string</td></tr>
      <tr><td><div align="right"><a name="98"></a><a href="#98">98</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="99"></a><a href="#99">99</a></div></td><td class="codeLine">    public function wordWrap($str, $width = 75, $break = &quot;\n&quot;, $cut = false);</td></tr>
@@ -170,9 +170,9 @@
      <tr><td><div align="right"><a name="102"></a><a href="#102">102</a></div></td><td class="codeLine">     * Pad a string to a certain length with another string</td></tr>
      <tr><td><div align="right"><a name="103"></a><a href="#103">103</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="104"></a><a href="#104">104</a></div></td><td class="codeLine">     * @param  string  $input</td></tr>
-     <tr><td><div align="right"><a name="105"></a><a href="#105">105</a></div></td><td class="codeLine">     * @param  integer $padLength</td></tr>
+     <tr><td><div align="right"><a name="105"></a><a href="#105">105</a></div></td><td class="codeLine">     * @param  int $padLength</td></tr>
      <tr><td><div align="right"><a name="106"></a><a href="#106">106</a></div></td><td class="codeLine">     * @param  string  $padString</td></tr>
-     <tr><td><div align="right"><a name="107"></a><a href="#107">107</a></div></td><td class="codeLine">     * @param  integer $padType</td></tr>
+     <tr><td><div align="right"><a name="107"></a><a href="#107">107</a></div></td><td class="codeLine">     * @param  int $padType</td></tr>
      <tr><td><div align="right"><a name="108"></a><a href="#108">108</a></div></td><td class="codeLine">     * @return string</td></tr>
      <tr><td><div align="right"><a name="109"></a><a href="#109">109</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine">    public function strPad($input, $padLength, $padString = ' ', $padType = STR_PAD_RIGHT);</td></tr>
@@ -188,7 +188,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.9</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.10-1ubuntu3.6</a> and <a href="http://phpunit.de/">PHPUnit 3.7.19</a> at Fri Apr 12 14:54:33 UTC 2013.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.13</a> using <a href="http://www.php.net/" target="_top">PHP 5.6.0-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.28</a> at Tue Oct 7 22:36:47 AMT 2014.</small>
     </p>
    </footer>
   </div>

@@ -7,7 +7,7 @@ use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 class AlbumControllerTest extends AbstractHttpControllerTestCase {
 	protected $traceError = true;
 	public function setUp() {
-		$this->setApplicationConfig ( include '/Users/luiz/Sites/Album/config/application.config.php' );
+		$this->setApplicationConfig ( include '/var/www/html/Album/config/application.config.php' );
 		parent::setUp ();
 	}
 	public function testIndexActionCanBeAccessed() {
