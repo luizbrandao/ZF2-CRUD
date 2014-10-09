@@ -39,6 +39,7 @@ class AlbumTable {
         
         if ($id == 0) {
             $this->tableGateway->insert($data);
+            $id = $this->tableGateway->lastInsertValue;	
         } else {
             if ($this->getAlbum($id)) {
                 $this->tableGateway->update($data, array('id' => $id));

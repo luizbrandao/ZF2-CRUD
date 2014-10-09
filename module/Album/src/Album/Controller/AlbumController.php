@@ -82,6 +82,7 @@ class AlbumController extends AbstractActionController{
 				'form' => $form,
 		);
 	}
+	
 	public function deleteAction(){
 		$id = (int) $this->params()->fromRoute('id', 0);
 		if (!$id) {

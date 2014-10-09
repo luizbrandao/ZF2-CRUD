@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/inicio/module/Album/view/album/album/index.phtml</title>
+  <title>Code Coverage for /var/www/html/Album/module/Album/view/album/album/index.phtml</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/inicio</a> <span class="divider">/</span></li>
+        <li><a href="index.html">/var/www/html/Album</a> <span class="divider">/</span></li>
         <li><a href="module.html">module</a> <span class="divider">/</span></li>
         <li><a href="module_Album.html">Album</a> <span class="divider">/</span></li>
         <li><a href="module_Album_view.html">view</a> <span class="divider">/</span></li>
@@ -53,7 +53,7 @@
       <td class="None big">&nbsp;</td>
       <td class="None small"><div align="right"></div></td>
       <td class="None small"><div align="right">&nbsp;</div></td>
-      <td class="None small"><acronym title="Change Risk Anti-Patterns (CRAP) Index">CRAP</acronym></td>
+      <td class="None small"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -82,17 +82,17 @@
      <tr><td><div align="right"><a name="13"></a><a href="#13">13</a></div></td><td class="codeLine">&lt;tr&gt;</td></tr>
      <tr><td><div align="right"><a name="14"></a><a href="#14">14</a></div></td><td class="codeLine">    &lt;th&gt;Title&lt;/th&gt;</td></tr>
      <tr><td><div align="right"><a name="15"></a><a href="#15">15</a></div></td><td class="codeLine">    &lt;th&gt;Artist&lt;/th&gt;</td></tr>
-     <tr><td><div align="right"><a name="16"></a><a href="#16">16</a></div></td><td class="codeLine">    &lt;th&gt;&amp;nbsp;&lt;/th&gt;</td></tr>
+     <tr><td><div align="right"><a name="16"></a><a href="#16">16</a></div></td><td class="codeLine">    &lt;th&gt;Actions&lt;/th&gt;</td></tr>
      <tr><td><div align="right"><a name="17"></a><a href="#17">17</a></div></td><td class="codeLine">&lt;/tr&gt;</td></tr>
      <tr><td><div align="right"><a name="18"></a><a href="#18">18</a></div></td><td class="codeLine">&lt;?php foreach ($albums as $album) : ?&gt;</td></tr>
      <tr><td><div align="right"><a name="19"></a><a href="#19">19</a></div></td><td class="codeLine">&lt;tr&gt;</td></tr>
      <tr><td><div align="right"><a name="20"></a><a href="#20">20</a></div></td><td class="codeLine">    &lt;td&gt;&lt;?php echo $this-&gt;escapeHtml($album-&gt;title);?&gt;&lt;/td&gt;</td></tr>
      <tr><td><div align="right"><a name="21"></a><a href="#21">21</a></div></td><td class="codeLine">    &lt;td&gt;&lt;?php echo $this-&gt;escapeHtml($album-&gt;artist);?&gt;&lt;/td&gt;</td></tr>
      <tr><td><div align="right"><a name="22"></a><a href="#22">22</a></div></td><td class="codeLine">    &lt;td&gt;</td></tr>
-     <tr><td><div align="right"><a name="23"></a><a href="#23">23</a></div></td><td class="codeLine">        &lt;a class=&quot;btn btn-primary&quot; href=&quot;&lt;?php echo $this-&gt;url('album',</td></tr>
-     <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine">            array('action'=&gt;'edit', 'id' =&gt; $album-&gt;id));?&gt;&quot;&gt;Edit&lt;/a&gt;</td></tr>
-     <tr><td><div align="right"><a name="25"></a><a href="#25">25</a></div></td><td class="codeLine">        &lt;a class=&quot;btn btn-danger&quot; href=&quot;&lt;?php echo $this-&gt;url('album',</td></tr>
-     <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine">            array('action'=&gt;'delete', 'id' =&gt; $album-&gt;id));?&gt;&quot;&gt;Delete&lt;/a&gt;</td></tr>
+     <tr><td><div align="right"><a name="23"></a><a href="#23">23</a></div></td><td class="codeLine">        &lt;a href=&quot;&lt;?php echo $this-&gt;url('album',</td></tr>
+     <tr><td><div align="right"><a name="24"></a><a href="#24">24</a></div></td><td class="codeLine">            array('action'=&gt;'edit', 'id' =&gt; $album-&gt;id));?&gt;&quot; class=&quot;btn btn-primary&quot;&gt;Edit&lt;/a&gt;</td></tr>
+     <tr><td><div align="right"><a name="25"></a><a href="#25">25</a></div></td><td class="codeLine">        &lt;a href=&quot;&lt;?php echo $this-&gt;url('album',</td></tr>
+     <tr><td><div align="right"><a name="26"></a><a href="#26">26</a></div></td><td class="codeLine">            array('action'=&gt;'delete', 'id' =&gt; $album-&gt;id));?&gt;&quot; class=&quot;btn btn-danger&quot;&gt;Delete&lt;/a&gt;</td></tr>
      <tr><td><div align="right"><a name="27"></a><a href="#27">27</a></div></td><td class="codeLine">    &lt;/td&gt;</td></tr>
      <tr><td><div align="right"><a name="28"></a><a href="#28">28</a></div></td><td class="codeLine">&lt;/tr&gt;</td></tr>
      <tr><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine">&lt;?php endforeach; ?&gt;</td></tr>
@@ -108,7 +108,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.9</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.10-1ubuntu3.6</a> and <a href="http://phpunit.de/">PHPUnit 3.7.19</a> at Fri Apr 12 14:54:33 UTC 2013.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.13</a> using <a href="http://www.php.net/" target="_top">PHP 5.6.0-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.28</a> at Tue Oct 7 22:36:47 AMT 2014.</small>
     </p>
    </footer>
   </div>
